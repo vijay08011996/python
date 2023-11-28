@@ -1,0 +1,11 @@
+def count_unique_characters(input_string):
+    # Using a set to store unique characters
+    unique_chars = set(input_string)
+    return len(unique_chars)
+
+
+test_string = "Hello World"
+
+# Call the function with the test string
+result = count_unique_characters(test_string)
+print("Number of unique characters:", result)
