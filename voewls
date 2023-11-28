@@ -1,0 +1,26 @@
+def count_vowels(string):
+    # Initialize vowel counts
+    vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+
+    # Convert input string to lowercase for case insensitivity
+    string = string.lower()
+
+    # Iterate through the string
+    for char in string:
+        # Check if the character is a vowel
+        if char in vowels:
+            # Increment the count for the respective vowel
+            vowels[char] += 1
+
+    # Calculate total vowel count
+    total_vowels = sum(vowels.values())
+
+    # Display individual vowel counts and total count
+    print("Individual vowel counts:")
+    for vowel, count in vowels.items():
+        print(f"{vowel.upper()}: {count}")
+    print(f"Total vowels: {total_vowels}")
+
+# Test the function with the given string
+input_string = "guvi geeks network private limited"
+count_vowels(input_string)
