@@ -1,0 +1,9 @@
+def count_words(input_string):
+    # Split the string into words based on spaces
+    words = input_string.split()
+    return len(words)
+
+# Example usage:
+input_string = "This is an example string"
+word_count = count_words(input_string)
+print(f"The number of words in '{input_string}' is: {word_count}")
