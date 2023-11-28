@@ -1,0 +1,17 @@
+def is_palindrome(input_string):
+    # Convert the input string to lowercase and remove spaces
+    input_string = input_string.lower().replace(" ", "")
+    
+    # Check if the string is equal to its reverse
+    return input_string == input_string[::-1]
+
+# Test string
+test_string = "Able was I ere I saw Elba"
+
+# Call the function with the test string
+result = is_palindrome(test_string)
+
+if result:
+    print(f'"{test_string}" is a palindrome.')
+else:
+    print(f'"{test_string}" is not a palindrome.')
